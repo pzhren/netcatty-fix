@@ -1,0 +1,4 @@
+# Keep source files LF regardless of OS
+* text=auto eol=lf
+*.png binary
+*.zip binary
