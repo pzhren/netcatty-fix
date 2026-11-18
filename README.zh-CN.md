@@ -70,6 +70,10 @@ English: [README.md](README.md) · 冻结修复复盘：[docs/freeze-fix.md](doc
 
 你只和监管 Agent 对话——它自己看结果、自己决定下一步，不需要你逐条指挥。
 
+<p align="center">
+  <img src="docs/supervisor-architecture.svg" width="680" alt="自主模式：用户、监管 Agent、任务 Agent 三方位置与监管大脑机制"/>
+</p>
+
 ### 两种运行模式
 
 | 模式 | 行为 | 适用 |

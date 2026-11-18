@@ -71,6 +71,10 @@ The discussion room settles *what*; autonomous mode handles *running it to the e
 
 You only talk to the supervisor; it reads results and decides the next step itself.
 
+<p align="center">
+  <img src="docs/supervisor-architecture.svg" width="680" alt="Autonomous mode: user, supervisor agent and task agent — positions and per-round mechanism"/>
+</p>
+
 ### Two run modes
 
 | Mode | Behaviour | Fits |
