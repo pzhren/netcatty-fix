@@ -149,6 +149,11 @@ your attention, and the local agent keeps execution on real servers.**
 - **AI panel rendering** — timeline renders the newest 60 events (older ones collapse), task output capped at 10, streaming buffer skips `setState` when unchanged, scroll writes de-duplicated
 - **Model catalog retry** — no longer retries forever when the catalog loads but is empty
 - **Packaging and diagnostics** — `scripts/update-sokai.cjs` for one-shot repacking, `scripts/_diag_heartbeat.cjs` as the only trustworthy freeze probe (single-shot probes give false positives)
+- **SFTP dialogs** — rename / new-folder / new-file / delete failures surfaced a silent `console.warn` only, so the dialog stayed open with no feedback; they now toast the real error (e.g. remote permission denied)
+- **SFTP toolbar overflow** — under 400 px the refresh / new-folder / new-file / show-hidden buttons were force-collapsed into the ⋮ menu, ignoring user customization; replaced with measured row-capacity overflow so narrow sidebars keep buttons inline
+- **Cloud sync (GitHub Gist) 401** — a connected-but-failing provider showed no error and no way to re-authenticate; the provider card now renders the error inline plus a "Reconnect" button (device flow re-authorization)
+- **In-app settings** — the settings gear now toggles a full-width panel docked below the top bar (no resizable side panel, no in-page close button); the stale `false` return on the close path no longer triggers a bogus "settings unavailable" toast
+- **Repo links** — feedback / discussions / source / release links and the update check API all point to this fork instead of upstream
 
 ## Relationship to upstream
 
